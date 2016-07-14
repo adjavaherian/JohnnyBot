@@ -1,0 +1,55 @@
+{
+  "name": "botkit",
+  "version": "0.0.7",
+  "description": "Building blocks for Building Bots",
+  "main": "lib/Botkit.js",
+  "dependencies": {
+    "axios": "^0.9.1",
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "flickrapi": "^0.4.1",
+    "http": "0.0.0",
+    "jfs": "^0.2.6",
+    "lodash": "^4.5.1",
+    "mathjs": "^2.7.0",
+    "mustache": "^2.2.1",
+    "numeral": "^1.5.3",
+    "path": "^0.12.7",
+    "promise": "^7.1.1",
+    "redis": "^2.4.2",
+    "request": "^2.69.0",
+    "tumblr": "^0.4.1",
+    "tumblr.js": "0.0.7",
+    "url-join": "0.0.1",
+    "ws": "^1.0.0"
+  },
+  "devDependencies": {
+    "jscs": "^2.7.0",
+    "node-env-file": "^0.1.8",
+    "should": "^8.0.2",
+    "sinon": "^1.17.3",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.4.0",
+    "winston": "^2.1.1"
+  },
+  "scripts": {
+    "pretest": "jscs ./lib/",
+    "test": "mocha tests/*.js",
+    "start": "token=$SLACK_TOKEN node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/howdyai/botkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/howdyai/botkit/issues"
+  },
+  "homepage": "http://howdy.ai/botkit",
+  "keywords": [
+    "bots",
+    "chatbots",
+    "slack"
+  ],
+  "author": "ben@xoxco.com",
+  "license": "MIT"
+}
